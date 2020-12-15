@@ -1,13 +1,153 @@
-* {
-  box-sizing: border-box;
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+header {
+  display: flex;
+  justify-content: center;
 }
 
-body {
-  font-family: 'Open Sans', sans-serif;
+header .header-container {
+  padding: 0 70px;
+  height: 100px;
+  display: grid;
+  grid-gap: 30px;
+  grid-template: "logo nav button";
+  grid-template-columns: max-content 1fr max-content;
+}
+
+@media (max-width: 1200px) {
+  header .header-container {
+    height: 64px;
+  }
+}
+
+header .header-container .header-logo {
+  max-width: 90px;
+  grid-area: logo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .header-container nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  grid-area: nav;
+}
+
+header .header-container nav .header-link {
+  margin: 0px 12px;
+  padding: 8px;
+  text-decoration: none;
+  color: #183b56;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+header .header-container .header-button {
+  grid-area: button;
+  padding: 13px 23px;
+  height: min-content;
+  align-self: center;
+  background-color: transparent;
+  color: #1565d8;
+  border: 2px solid #1565d8;
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.banner {
+  padding: 62px 0 54px 107px;
+  height: 700px;
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 40%, #e8eae9 60%), url(/images/jpg/banner-bg.png) no-repeat 140% 40%;
+}
+
+@font-face {
+  font-family: "HKGrotrsk-Regular";
+  src: url("/fonts/HKGrotesk-Regular.woff2") format("woff2"), url("/fonts/HKGrotesk-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "HKGrotrsk-Regular";
+  src: url("/fonts/HKGrotesk-SemiBoldLegacy.woff2") format("woff2"), url("/fonts/HKGrotesk-SemiBoldLegacy.woff") format("woff");
 }
 
 .container {
-  max-width: 1140px;
-  margin: auto;
+  width: 1280px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
 }
 /*# sourceMappingURL=style.css.map */
