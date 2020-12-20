@@ -1,6 +1,91 @@
 .banner {
-  padding: 62px 0 54px 107px;
+  padding: 66px 0 54px 107px;
   height: 700px;
   background: linear-gradient(270deg, rgba(0, 0, 0, 0) 40%, #e8eae9 60%),
-    url(/images/jpg/banner-bg.png) no-repeat 140% 40%;
+    url(../images/jpg/header-image.png) no-repeat 140% 40%;
+  border-radius: 8px;
+  .banner-tag {
+    padding: 6px 16px;
+    margin-bottom: 28px;
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #36b37e;
+    background-color: rgba(54, 179, 126, 0.1);
+    border-radius: 2000px;
+  }
+  .banner-title {
+    padding-top: 26px;
+    color: $primary;
+    width: 425px;
+    font-family: "HKGrotesk", sans-serif;
+    font-feature-settings: "locl" 0;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 68px;
+    letter-spacing: 1px;
+  }
+  .banner-description {
+    margin: 37px 0 50px 0;
+    width: 655px;
+    font-family: "Open Sans";
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 36px;
+    color: #5a7184;
+  }
+  .banner-button {
+    margin-bottom: 48px;
+    padding: 14px 40px;
+    background-color: $primary;
+    color: $white;
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    .banner-button:focus {
+      outline: none;
+    }
+  }
+  .banner-option {
+    width: 463px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "HKGrotrsk-Regular";
+    font-feature-settings: "locl" 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+  }
+  .option-image {
+    margin-right: 8px;
+  }
+  .banner-option {
+    font-family: "HKGrotesk";
+    font-feature-settings: "locl" 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    .banner-option_first {
+      display: flex;
+      align-items: center;
+    }
+    .banner-option_second {
+      display: flex;
+      align-items: center;
+    }
+    .banner-option_third {
+      display: flex;
+      align-items: center;
+    }
+  }
 }

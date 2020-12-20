@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
@@ -42,30 +43,234 @@
           <button class="banner-button">Подобрать одежду</button>
           <div class="banner-options">
             <div class="banner-option">
-              <img
-                class="option-image"
-                src="images/svg/icons/hand.svg"
-                alt="icon: hand"
-              />
-              <span class="option-text">Онлайн оплата</span>
-              <img
-                class="option-image"
-                src="images/svg/icons/shield.svg"
-                alt="icon: hand"
-              />
-              <span class="option-text">Гарантия</span>
-              <img
-                class="option-image"
-                src="images/svg/icons/like.svg"
-                alt="icon: hand"
-              />
-              <span class="option-text">Качество</span>
+              <div class="banner-option_first">
+                <img
+                  class="option-image"
+                  src="images/svg/icons/hand.svg"
+                  alt="icon: hand"
+                />
+                <span class="option-text">Онлайн оплата</span>
+              </div>
+              <div class="banner-option_second">
+                <img
+                  class="option-image"
+                  src="images/svg/icons/shield.svg"
+                  alt="icon: hand"
+                />
+                <span class="option-text">Гарантия</span>
+              </div>
+              <div class="banner-option_third">
+                <img
+                  class="option-image"
+                  src="images/svg/icons/like.svg"
+                  alt="icon: hand"
+                />
+                <span class="option-text">Качество</span>
+              </div>
             </div>
           </div>
         </section>
       </div>
       <!-- /.main -->
     </main>
+
+    <section class="new-colection">
+      <div class="new-colection-container">
+        <div class="wrapper">
+          <div class="image-gallery">
+            <div class="image-gallery__main"></div>
+            <div class="image-gallery-wrapepr">
+              <div class="image-gallery__top"></div>
+              <div class="image-gallery__bottom"></div>
+            </div>
+          </div>
+          <div class="wrapper-text">
+            <h2 class="wrapper__title">Новая зимняя коллекция</h2>
+            <h4 class="wrapper__description">
+              Сейчас зимний сезон. Вы можете увидеть больше из этой коллекции,
+              нажав кнопку ниже. Успейте купить, пока коллекция есть в наличии.
+              Используйте код EHYA20, чтобы получить 20% скидку.
+            </h4>
+            <div class="wrapper-text__link">
+              <a href="#" class="wrapper-text__text"
+                >Посмотреть коллекцию
+                <img
+                  src="images/svg/icons/arrow-right.svg"
+                  alt="icon: arrow-right"
+                  class="wrapper-text__image"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.new-colection -->
+    <section class="trends">
+      <div class="trends-container">
+        <div class="trends-wrapper">
+          <h2 class="wrapper-title">Тренды</h2>
+          <div class="trends-tabs">
+            <a href="#" class="trends-tabs__item">Новинки</a>
+            <a href="#" class="trends-tabs__item">Лучшее</a>
+            <a href="#" class="trends-tabs__item">Скоро</a>
+          </div>
+          <!-- /.trends-tabs -->
+        </div>
+        <!-- /.trends-wrapper -->
+        <div class="cards">
+          <div class="cards-item">
+            <img
+              src="images/jpg/minimalist-style.jpg"
+              alt="img: minimal"
+              class="cards-image"
+            />
+            <h3 class="cards-title">Minimalist Style</h3>
+            <div class="price">
+              <span class="sum">$25.7</span>
+              <img
+                src="images/svg/icons/shopping-cartcart.svg"
+                alt="icon: cards-image"
+                class="price-image"
+              />
+            </div>
+          </div>
+          <!-- ./cards-item -->
+          <div class="cards-item">
+            <img
+              src="images/jpg/luxury-gown.jpg"
+              alt="img: minimal"
+              class="cards-image"
+            />
+            <h3 class="cards-title">Luxury Gown</h3>
+            <div class="price">
+              <span class="sum">$30.6</span>
+              <img
+                src="images/svg/icons/shopping-cartcart.svg"
+                alt="icon: cards-image"
+                class="price-image"
+              />
+            </div>
+          </div>
+          <!-- ./cards-item -->
+          <div class="cards-item">
+            <img
+              src="images/jpg/fuul-coloristy.jpg"
+              alt="img: minimal"
+              class="cards-image"
+            />
+            <h3 class="cards-title">Full Coloristy</h3>
+            <div class="price">
+              <span class="sum">$25.7</span>
+              <img
+                src="images/svg/icons/shopping-cartcart.svg"
+                alt="icon: cards-image"
+                class="price-image"
+              />
+            </div>
+          </div>
+          <!-- ./cards-item -->
+          <div class="cards-item">
+            <img
+              src="images/jpg/pinky-winky.jpg"
+              alt="img: minimal"
+              class="cards-image"
+            />
+            <h3 class="cards-title">Pinky Winky</h3>
+            <div class="price">
+              <span class="sum">$109</span>
+              <img
+                src="images/svg/icons/shopping-cartcart.svg"
+                alt="icon: cards-image"
+                class="price-image"
+              />
+            </div>
+          </div>
+          <!-- ./cards-item -->
+          <div class="cards-item">
+            <img
+              src="images/jpg/holiday-vibes.jpg"
+              alt="img: minimal"
+              class="cards-image"
+            />
+            <h3 class="cards-title">Holiday Vibes</h3>
+            <div class="price">
+              <span class="sum">$51.2</span>
+              <img
+                src="images/svg/icons/shopping-cartcart.svg"
+                alt="icon: cards-image"
+                class="price-image"
+              />
+            </div>
+          </div>
+          <!-- ./cards-item -->
+          <div class="cards-item">
+            <img
+              src="images/jpg/swaggie-shaggy.jpg"
+              alt="img: minimal"
+              class="cards-image"
+            />
+            <h3 class="cards-title">Swaggie Shaggy</h3>
+            <div class="price">
+              <span class="sum">$81.3</span>
+              <img
+                src="images/svg/icons/shopping-cartcart.svg"
+                alt="icon: cards-image"
+                class="price-image"
+              />
+            </div>
+          </div>
+          <!-- ./cards-item -->
+          <div class="cards-item">
+            <img
+              src="images/jpg/red-format.jpg"
+              alt="img: minimal"
+              class="cards-image"
+            />
+            <h3 class="cards-title">Red Formal</h3>
+            <div class="price">
+              <span class="sum">$66.8</span>
+              <img
+                src="images/svg/icons/shopping-cartcart.svg"
+                alt="icon: cards-image"
+                class="price-image"
+              />
+            </div>
+          </div>
+          <!-- ./cards-item -->
+          <a href="#" class="last-card">
+            <div class="cards-item-last">
+            <div class="last-info">
+          <img class="last-info__icon" src="images/svg/icons/plusplus.svg" alt="icon: plus">
+            <h3 class="last-cards-title">Смотреть больше коллекций</h3>
+          </div>
+            </div>
+          </a>
+          </div>
+          <!-- ./cards-item -->
+        </div>
+        <!-- /.cards -->
+      </div>
+      <!-- /.trends-container -->
+    </section>
+    <!-- /.trends -->
+
+    <section class="reviews">
+      <div class="reviews-container">
+        <div class="swiper-container">
+          <img src="images/svg/icons/quote-leftquote-left.svg" alt="icon: quote-leftquote-left" class="swiper-container__image">
+          <p class="swiper-container__text">Мне очень нравятся дизайн и стили, которые создает Ehya. Они такие разные и новаторские. Я покупала несколько раз из коллекций, и что мне нравится, это то, что они действительно неподвластны времени, а качество ткани просто превосходно. Я с нетерпением жду новых коллекций от сезона к сезону</p>
+          <h3 class="swiper-container__title">Алисия Пума - клиент Fashun</h3>
+          <div class="swiper-pagination">
+            <span class="dot">1</span>
+            <span class="dot">2</span>
+            <span class="dot">3</span>
+          </div>
+        </div>
+      </div>
+      <!-- /.reviews-container -->
+    </section>
+    <!-- /.reviews -->
 
     <footer></footer>
 

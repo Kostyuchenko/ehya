@@ -1,0 +1,81 @@
+.new-colection {
+  padding: 120px 0 145px 0;
+  .new-colection-container {
+    width: 1280px;
+    padding: 0 70px;
+    margin: auto;
+    .wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      .image-gallery {
+        width: 670px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .image-gallery__main {
+          width: 320px;
+          height: 490px;
+          background: url(../images/jpg/new-colections-main.jpg) no-repeat
+            center center;
+        }
+        .image-gallery-wrapepr {
+          height: 490px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          .image-gallery__top {
+            width: 320px;
+            height: 230px;
+            background: url(../images/jpg/new-colections-top.jpg) no-repeat
+              center center;
+          }
+          .image-gallery__bottom {
+            width: 320px;
+            height: 230px;
+            background: url(../images/jpg/new-colections-bottom.jpg) no-repeat
+              center center;
+          }
+        }
+      }
+      .wrapper-text {
+        width: 412px;
+        .wrapper__title {
+          margin-bottom: 35px;
+          font-family: "HKGrotesk", sans-serif;
+          font-feature-settings: "locl" 0;
+          font-weight: 600;
+          font-size: 48px;
+          line-height: 60px;
+          letter-spacing: 1px;
+          color: $primary;
+        }
+        .wrapper__description {
+          width: 400px;
+          line-height: 1.85;
+          margin-bottom: 40px;
+          font-family: "Open Sans";
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 36px;
+          color: #5a7184;
+        }
+        .wrapper-text__text {
+          width: 260px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          font-family: "Open Sans";
+          font-style: normal;
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 25px;
+          text-decoration: none;
+          color: $secondary;
+        }
+      }
+    }
+  }
+}

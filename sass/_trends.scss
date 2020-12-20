@@ -1,0 +1,110 @@
+.trends-container {
+  width: 1130px;
+  margin: auto;
+  .trends-wrapper {
+    margin-bottom: 49px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .wrapper-title {
+      font-family: "HKGrotesk";
+      font-feature-settings: "locl" 0;
+      color: $primary;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 60px;
+      letter-spacing: 0.2px;
+    }
+    .trends-tabs {
+      width: 285px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .trends-tabs__item {
+        text-decoration: none;
+        color: #5a7184;
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+      }
+    }
+  }
+  .cards {
+    height: 975px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .cards-item {
+      width: 260px;
+      height: 441px;
+      .cards-image {
+        margin-bottom: 17px;
+      }
+    }
+    .last-card {
+      text-decoration: none;
+    }
+    .cards-item-last {
+      padding: 120px 22px 104px 22px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 260px;
+      height: 350px;
+      background-color: $secondary;
+      .last-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        text-align: center;
+        .last-info__icon {
+          margin-bottom: 25px;
+        }
+        .last-cards-title {
+          color: $white;
+          font-family: "HKGrotesk";
+          font-feature-settings: "locl" 0;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 24px;
+          line-height: 32px;
+          letter-spacing: 0.2px;
+        }
+      }
+    }
+    .cards-title {
+      padding-left: 14px;
+      margin-bottom: 6px;
+      font-family: "HKGrotesk";
+      font-feature-settings: "locl" 0;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: 0.2px;
+      color: $primary;
+    }
+    .price {
+      width: 97%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .sum {
+        padding-left: 12px;
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 36px;
+        color: #5a7184;
+      }
+    }
+  }
+}

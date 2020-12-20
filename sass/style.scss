@@ -4,20 +4,12 @@
 // Components
 @import "header";
 @import "banner";
+@import "colection";
+@import "fonts";
+@import "trends";
+@import "reviews";
 // Fonts
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
-
-@font-face {
-  font-family: "HKGrotrsk-Regular";
-  src: url("/fonts/HKGrotesk-Regular.woff2") format("woff2"),
-    url("/fonts/HKGrotesk-Regular.woff") format("woff");
-}
-
-@font-face {
-  font-family: "HKGrotrsk-Regular";
-  src: url("/fonts/HKGrotesk-SemiBoldLegacy.woff2") format("woff2"),
-    url("/fonts/HKGrotesk-SemiBoldLegacy.woff") format("woff");
-}
 
 //-------//-------//-------//
 
